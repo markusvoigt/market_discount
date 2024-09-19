@@ -1,0 +1,26 @@
+query RunInput {
+  discountNode {
+    metafield(namespace: "$app:super-discount", key: "function-configuration") {
+      value
+    }
+  }
+  cart{
+    lines{
+      id,
+      cost {
+        amountPerQuantity {
+          amount
+          currencyCode
+        }
+        compareAtAmountPerQuantity {
+          amount
+        }
+      }
+    }
+  }
+  localization{
+    market{
+      handle
+    }
+  }
+}
