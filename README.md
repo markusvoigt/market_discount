@@ -4,6 +4,8 @@
 
 This Shopify Function dynamically applies a 10% discount to eligible products in specific markets, excluding items that are already on sale. It is designed to integrate seamlessly with Shopify Markets, allowing for targeted discounts that enhance the shopping experience and promote sales in designated regions.
 
+**[Demo](https://screenshot.click/19-00-8itdu-si1q9.mp4)**
+
 ## Features
 
 - **Market-Specific Discounts**: Applies discounts only to products in specified markets (`de`, `usa`).
