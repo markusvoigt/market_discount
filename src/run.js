@@ -29,7 +29,7 @@ const EXLUDE_LINE_ITEMS_ON_SALE=true
 export function run(input) {
   const currentMarket = input?.localization.market.handle;
   if (!ELEGIBLE_MARKETS.some((market)=>market===currentMarket)) return EMPTY_DISCOUNT;
-  const targets = input.cart.lines.filter((line) => !isLineOnDiscount(line) && EXLUDE_LINE_ITEMS_ON_SALE)
+  const targets = input.cart.lines.filter((line) => !isLineOnDiscount(line) || !EXLUDE_LINE_ITEMS_ON_SALE)
     .map((line) => {
       return ({
         cartLine: {
